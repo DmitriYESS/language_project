@@ -9,7 +9,7 @@ def test_language_and_add_button(browser):
     browser.get(link)
     time.sleep(5)
     try:
-        button = browser.find_element(By.CSS_SELECTOR, "button[type='submit']")
+        button = browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
         assert button.is_displayed()
         print("Кнопка найдена и отображается на странице")
 
